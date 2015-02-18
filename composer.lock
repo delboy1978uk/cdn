@@ -1,0 +1,84 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "hash": "54e92d32607978f1dc62cd59243b8f8d",
+    "packages": [
+        {
+            "name": "delboy1978uk/css",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/delboy1978uk/css.git",
+                "reference": "a9ec1129e0041a0568f7373933e288a7978ec7c9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/delboy1978uk/css/zipball/a9ec1129e0041a0568f7373933e288a7978ec7c9",
+                "reference": "a9ec1129e0041a0568f7373933e288a7978ec7c9",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Del\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "Derek Stephen McLean",
+                    "email": "delboy1978uk@gmail.com"
+                }
+            ],
+            "description": "Karate Chop CSS™",
+            "time": "2015-01-16 15:02:15"
+        },
+        {
+            "name": "delboy1978uk/icon",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/delboy1978uk/icon.git",
+                "reference": "9df84ac10de1df192f0dbb40d77b822ccadd3ab0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/delboy1978uk/icon/zipball/9df84ac10de1df192f0dbb40d77b822ccadd3ab0",
+                "reference": "9df84ac10de1df192f0dbb40d77b822ccadd3ab0",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Del": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Derek McLean",
+                    "email": "delboy1978uk@gmail.com"
+                }
+            ],
+            "description": "PHP Class for generating Font Awesome icons.",
+            "time": "2015-02-05 14:40:38"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": {
+        "delboy1978uk/css": 20,
+        "delboy1978uk/icon": 20
+    },
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}
