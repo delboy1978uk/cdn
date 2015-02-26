@@ -10,9 +10,22 @@ class Cdn
         return Icon::fontAwesomeHeadCssLink();
     }
 
-    public static function bootstrapCssLink()
+    /**
+     * @param string $version
+     * @return string
+     */
+    public static function bootstrapCssLink($version = '3.3.2')
     {
-        return '<link type="text/css" rel="stylesheet" media="screen" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">';
+        switch($version)
+        {
+            case '2.3.2':
+                return '<link type="text/css" rel="stylesheet" media="screen" href="//maxcdn.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css">';
+                break;
+            default:
+                return '<link type="text/css" rel="stylesheet" media="screen" href="//maxcdn.bootstrapcdn.com/bootstrap/'.$version.'/css/bootstrap.min.css">';
+                break;
+        }
+
     }
 
     public static function jQueryUiCssLink($version = '1.11.3')
@@ -25,9 +38,18 @@ class Cdn
         return Css::add();
     }
 
-    public static function bootstrapJavascript()
+    public static function bootstrapJavascript($version = '3.3.2')
     {
-        return '<script type="text/javascript" src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>';
+        switch($version)
+        {
+            case '2.3.2':
+                return '<script type="text/javascript" src="//maxcdn.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>';
+                break;
+            default:
+                return '<script type="text/javascript" src="//maxcdn.bootstrapcdn.com/bootstrap/'.$version.'js/bootstrap.min.js"></script>';
+                break;
+        }
+
     }
 
     public static function jQueryJavascript($version = '2.1.3')
