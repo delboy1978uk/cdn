@@ -46,7 +46,7 @@ class Cdn
                 return '<script type="text/javascript" src="//maxcdn.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>';
                 break;
             default:
-                return '<script type="text/javascript" src="//maxcdn.bootstrapcdn.com/bootstrap/'.$version.'js/bootstrap.min.js"></script>';
+                return '<script type="text/javascript" src="//maxcdn.bootstrapcdn.com/bootstrap/'.$version.'/js/bootstrap.min.js"></script>';
                 break;
         }
 
