@@ -13,6 +13,6 @@
     },
     "require": {
         "delboy1978uk/css": "*",
-        "delboy1978uk/icon": "*"
+        "delboy1978uk/icon": "v1.0"
     }
 }
