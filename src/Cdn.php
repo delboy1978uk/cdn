@@ -14,7 +14,7 @@ class Cdn
      * @param string $version
      * @return string
      */
-    public static function bootstrapAngular($version = '3.3.2')
+    public static function angularJavascript($version = '3.3.2')
     {
         switch($version)
         {
