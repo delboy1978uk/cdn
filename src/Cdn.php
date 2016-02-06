@@ -3,11 +3,26 @@
 namespace Del;
 
 
+/**
+ * Class Cdn
+ * @package Del
+ */
 class Cdn
 {
-    public static function fontAwesomeCssLink()
+
+    /**
+     * @param string $version
+     * @return string
+     */
+    public static function bootstrapAngular($version = '3.3.2')
     {
-        return Icon::fontAwesomeHeadCssLink();
+        switch($version)
+        {
+            default:
+                return '<script src="//ajax.googleapis.com/ajax/libs/angularjs/'.$version.'/angular.min.js"></script>';
+                break;
+        }
+
     }
 
     /**
@@ -28,16 +43,10 @@ class Cdn
 
     }
 
-    public static function jQueryUiCssLink($version = '1.11.3')
-    {
-        return '<link type="text/css" rel="stylesheet" media="screen" href="//ajax.googleapis.com/ajax/libs/jqueryui/'.$version.'/themes/smoothness/jquery-ui.css">';
-    }
-
-    public static function delCssLink()
-    {
-        return Css::add();
-    }
-
+    /**
+     * @param string $version
+     * @return string
+     */
     public static function bootstrapJavascript($version = '3.3.2')
     {
         switch($version)
@@ -52,11 +61,44 @@ class Cdn
 
     }
 
+    /**
+     * @return mixed
+     */
+    public static function delCssLink()
+    {
+        return Css::add();
+    }
+
+    /**
+     * @return string
+     */
+    public static function fontAwesomeCssLink()
+    {
+        return Icon::fontAwesomeHeadCssLink();
+    }
+
+    /**
+     * @param string $version
+     * @return string
+     */
     public static function jQueryJavascript($version = '2.1.3')
     {
         return '<script src="//ajax.googleapis.com/ajax/libs/jquery/'.$version.'/jquery.min.js"></script>';
     }
 
+    /**
+     * @param string $version
+     * @return string
+     */
+    public static function jQueryUiCssLink($version = '1.11.3')
+    {
+        return '<link type="text/css" rel="stylesheet" media="screen" href="//ajax.googleapis.com/ajax/libs/jqueryui/'.$version.'/themes/smoothness/jquery-ui.css">';
+    }
+
+    /**
+     * @param string $version
+     * @return string
+     */
     public static function jQueryUIJavascript($version = '1.11.3')
     {
         return '<script src="//ajax.googleapis.com/ajax/libs/jqueryui/'.$version.'/jquery-ui.min.js"></script>';
