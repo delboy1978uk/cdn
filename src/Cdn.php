@@ -14,7 +14,7 @@ class Cdn
      * @param string $version
      * @return string
      */
-    public static function angularJavascript($version = '3.3.2')
+    public static function angularJavascript($version = '1.5.0')
     {
         switch($version)
         {
