@@ -72,9 +72,9 @@ class Cdn
     /**
      * @return string
      */
-    public static function fontAwesomeCssLink()
+    public static function fontAwesomeCssLink($version = '4.3.0')
     {
-        return Icon::fontAwesomeHeadCssLink();
+        return Icon::fontAwesomeHeadCssLink($version);
     }
 
     /**
