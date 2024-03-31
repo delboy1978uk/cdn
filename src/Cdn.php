@@ -2,19 +2,9 @@
 
 namespace Del;
 
-
-/**
- * Class Cdn
- * @package Del
- */
 class Cdn
 {
-
-    /**
-     * @param string $version
-     * @return string
-     */
-    public static function angularJavascript($version = '1.5.6')
+    public static function angularJavascript(string $version = '1.5.6'): string
     {
         switch($version)
         {
@@ -22,14 +12,9 @@ class Cdn
                 return '<script src="//ajax.googleapis.com/ajax/libs/angularjs/'.$version.'/angular.min.js"></script>';
                 break;
         }
-
     }
 
-    /**
-     * @param string $version
-     * @return string
-     */
-    public static function bootstrapCssLink($version = '4.5.3')
+    public static function bootstrapCssLink(string $version = '4.5.3'): string
     {
         switch($version)
         {
@@ -46,11 +31,7 @@ class Cdn
 
     }
 
-    /**
-     * @param string $version
-     * @return string
-     */
-    public static function bootstrapJavascript($version = '4.5.3')
+    public static function bootstrapJavascript(string $version = '4.5.3'): string
     {
         switch($version)
         {
@@ -67,63 +48,37 @@ class Cdn
 
     }
 
-    /**
-     * @return mixed
-     */
-    public static function delCssLink()
+    public static function delCssLink(): string
     {
         return Css::add();
     }
 
-    /**
-     * @return string
-     */
-    public static function fontAwesomeCssLink($version = '4.3.0')
+    public static function fontAwesomeCssLink(string $version = '4.3.0'): string
     {
         return Icon::fontAwesomeHeadCssLink($version);
     }
 
-    /**
-     * @param string $version
-     * @return string
-     */
-    public static function jQueryJavascript($version = '3.5.1')
+    public static function jQueryJavascript(string $version = '3.5.1'): string
     {
         return '<script src="//ajax.googleapis.com/ajax/libs/jquery/'.$version.'/jquery.min.js"></script>';
     }
 
-    /**
-     * @param string $version
-     * @return string
-     */
-    public static function jQueryUiCssLink($version = '1.12.1')
+    public static function jQueryUiCssLink(string $version = '1.12.1'): string
     {
         return '<link type="text/css" rel="stylesheet" media="screen" href="//ajax.googleapis.com/ajax/libs/jqueryui/'.$version.'/themes/smoothness/jquery-ui.css">';
     }
 
-    /**
-     * @param string $version
-     * @return string
-     */
-    public static function jQueryUIJavascript($version = '1.12.1')
+    public static function jQueryUIJavascript(string $version = '1.12.1'): string
     {
         return '<script src="//ajax.googleapis.com/ajax/libs/jqueryui/'.$version.'/jquery-ui.min.js"></script>';
     }
 
-    /**
-     * @param string $version
-     * @return string
-     */
-    public static function d3Javascript($version = '6.2.0')
+    public static function d3Javascript(string $version = '6.2.0'): string
     {
         return '<script src="https://ajax.googleapis.com/ajax/libs/d3js/'.$version.'/d3.min.js"></script>"></script>';
     }
 
-    /**
-     * @param string $version
-     * @return string
-     */
-    public static function dojoJavascript($version = '1.13.0')
+    public static function dojoJavascript(string $version = '1.13.0'): string
     {
         return '<script src="https://ajax.googleapis.com/ajax/libs/dojo/'.$version.'/dojo/dojo.js"></script>';
     }
